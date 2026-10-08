@@ -1,0 +1,78 @@
+# =============================================================================
+#  R E P S   ·   rt-lang
+# =============================================================================
+[package]
+name    = "rt-lang"
+version = "0.1.0"
+
+# Minimum Supported Rust Version (MSRV)
+rust-version = "1.85"
+edition = "2024"
+
+# License
+license = "Apache-2.0 OR MIT"
+
+# Readme
+readme = "README.md"
+
+# Description
+description = "Native runtime support for LexerSketch programs: entry, allocation, strings, unwinding, and threads, built by our own backend."
+
+# Keywords (5 max)
+keywords = ["runtime", "allocator", "compiler", "native", "lexersketch"]
+
+# Categories
+categories = ["compilers", "memory-management", "no-std"]
+
+# Links
+homepage      = "https://github.com/jamesgober/rt-lang"
+repository    = "https://github.com/jamesgober/rt-lang"
+documentation = "https://docs.rs/rt-lang"
+
+# Authors
+authors = ["James Gober <me@jamesgober.com>"]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[lib]
+name = "rt_lang"
+path = "src/lib.rs"
+
+
+# FEATURE FLAGS
+# #################################
+[features]
+default = ["std"]
+std = []
+
+
+# DEPENDENCIES
+# #################################
+[dependencies]
+# First-party -lang dependencies are wired at v0.2.0, when first used.
+
+
+# DEV DEPENDENCIES
+# #################################
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+proptest  = "1"
+
+
+# BENCHMARKS
+# #################################
+[[bench]]
+name    = "bench"
+harness = false
+
+
+# RELEASE PROFILE
+# #################################
+[profile.release]
+opt-level     = 3
+lto           = "fat"
+codegen-units = 1
+panic         = "abort"
+strip         = "symbols"

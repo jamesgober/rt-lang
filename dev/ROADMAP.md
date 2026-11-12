@@ -20,4 +20,4 @@ Compiles, CI green, structure correct, no domain logic.
 - [ ] Differential tests against the VM; fuzzing; ABI conformance per OS.
 
 ## v1.0.0 - Stable
-- [ ] Frozen after Zero and a Kraken subset run natively on all three OSes (D18).
+- [ ] Frozen after Zero and a static language subset run natively on all three OSes (D18).

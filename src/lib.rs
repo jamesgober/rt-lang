@@ -1,6 +1,6 @@
 //! # rt_lang
 //!
-//! Native runtime support for LexerSketch programs: entry, allocation, strings, unwinding, and threads, built by our own backend.
+//! Native runtime support for toolchain programs: entry, allocation, strings, unwinding, and threads, built by our own backend.
 //!
 //! Scaffold release (v0.1.0). The public surface is designed across the 0.x
 //! series and frozen at v1.0. See `docs/API.md` and `dev/ROADMAP.md` for the

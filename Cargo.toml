@@ -16,10 +16,10 @@ license = "Apache-2.0 OR MIT"
 readme = "README.md"
 
 # Description
-description = "Native runtime support for LexerSketch programs: entry, allocation, strings, unwinding, and threads, built by our own backend."
+description = "Native runtime support for toolchain programs: entry, allocation, strings, unwinding, and threads, built by our own backend."
 
 # Keywords (5 max)
-keywords = ["runtime", "allocator", "compiler", "native", "lexersketch"]
+keywords = ["runtime", "allocator", "compiler", "native"]
 
 # Categories
 categories = ["compilers", "memory-management", "no-std"]

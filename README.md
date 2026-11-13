@@ -3,7 +3,7 @@
     <br>
     <b>rt-lang</b>
     <br>
-    <sub><sup>LEXERSKETCH NATIVE RUNTIME</sup></sub>
+    <sub><sup>NATIVE RUNTIME</sup></sub>
 </h1>
 
 <div align="center">
@@ -18,7 +18,7 @@
 
 <div align="left">
     <p>
-        <strong>rt-lang</strong> is the runtime every natively compiled LexerSketch program links: program entry and exit, the allocator, strings, panics and unwinding, threads, and GC hooks. It is written in the toolchain's own IR and compiled by the toolchain's own backend, talking to the OS directly (syscalls on Linux, PE imports on Windows, libSystem on macOS), so no C runtime or C compiler is involved.
+        <strong>rt-lang</strong> is the runtime every natively compiled toolchain program links: program entry and exit, the allocator, strings, panics and unwinding, threads, and GC hooks. It is written in the toolchain's own IR and compiled by the toolchain's own backend, talking to the OS directly (syscalls on Linux, PE imports on Windows, libSystem on macOS), so no C runtime or C compiler is involved.
     </p>
     <br>
     <hr>
